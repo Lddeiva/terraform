@@ -1,0 +1,62 @@
+terraform init
+
+terraform fmt --recursive
+
+terraform validate
+
+terraform plan
+
+terraform plan -var="name=wus2-rg-01" -var="location=west us2"
+
+terraform apply
+
+terraform apply --auto-approve
+
+terraform output
+
+terraform show
+
+terraform state list
+
+terraform state list azurerm_resource_group.rg1
+
+terraform state show azurerm_resource_group.rg1
+
+terraform graph
+
+# Download GraphViz from https://www.graphviz.org/download/
+
+terraform graph | dot -Tsvg > graph.svg
+
+# Add a tag "environment: sandbox" to the resource group "eus2-app-rg-01"
+
+terraform plan -refresh-only
+
+terraform show
+
+terraform apply -refresh-only
+
+terraform show
+
+# Create a resource named "eus2-app-rg-02" manually
+
+# Copy the below code to main.tf file
+# Code for resource group eus2-app-rg-02
+resource "azurerm_resource_group" "rg2" {
+  name = "eus2-app-rg-02"
+  location = "east us2"
+}
+####
+
+
+terraform import azurerm_resource_group.rg2 "resource id of the resource group eus2-app-rg-02"
+
+terraform show
+
+terraform console
+
+terraform plan --destroy
+
+terraform destroy
+
+terraform destroy --auto-approve

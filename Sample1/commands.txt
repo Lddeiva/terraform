@@ -1,0 +1,26 @@
+terraform version
+
+terraform init
+
+terraform fmt
+
+terraform validate
+
+terraform plan
+
+terraform plan -var="name=eus2-rg-01" -var="location=east us2"
+
+terraform apply -var="name=eus2-rg-01" -var="location=east us2"
+
+terraform apply -var="name=eus2-rg-01" -var="location=east us2" --auto-approve
+
+terraform output
+
+terraform providers
+
+
+terraform plan -var="name=eus2-rg-01" -var="location=east us2" --destroy
+
+terraform destroy -var="name=eus2-rg-01" -var="location=east us2"
+
+terraform destroy -var="name=eus2-rg-01" -var="location=east us2" --auto-approve

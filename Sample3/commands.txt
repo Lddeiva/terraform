@@ -1,0 +1,53 @@
+dir
+
+terraform init
+
+terraform fmt
+
+terraform validate
+
+terraform plan
+
+terraform apply --auto-approve
+
+terraform output
+
+terraform destroy --auto-approve
+
+terraform output
+
+dir
+
+terraform workspace list
+
+terraform workspace show
+
+terraform workspace new dev
+
+terraform workspace new test
+
+terraform workspace select dev
+
+terraform plan
+
+terraform workspace select test
+
+terraform plan
+
+terraform apply --auto-approve
+
+terraform destroy --auto-approve
+
+terraform workspace delete test
+
+terraform workspace select default
+
+terraform workspace delete test
+
+terraform workspace delete dev
+
+terraform providers lock
+
+terraform providers schema
+
+terraform providers mirror
